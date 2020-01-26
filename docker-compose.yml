@@ -6,12 +6,12 @@ services:
     environment:
       POSTGRES_PASSWORD: 123456
       ports:
-       - 5432:5432
+        - "5432:5432"
 
   adminer:
     image: adminer
     restart: always
-    ports:
-      - 6080:8080
+      ports:
+         - "6080:8080"
   java:
     build: .
