@@ -1,17 +1,19 @@
 version: "3.7" 
+
 services:
+
   db:
     image: postgres
     restart: always
+    ports:
+      - "5432:5432"
     environment:
       POSTGRES_PASSWORD: 123456
+        
+    adminer:
+      image: adminer
+      restart: always
       ports:
-        - "5432:5432"
-
-  adminer:
-    image: adminer
-    restart: always
-      ports:
-         - "6080:8080"
-  java:
-    build: .
+        - 6080:8080
+    java:
+      build: .
