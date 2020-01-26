@@ -10,11 +10,11 @@ services:
     environment:
       POSTGRES_PASSWORD: 123456
         
-    adminer:
-      image: adminer
-      restart: always
-      ports:
-        - "6080:8080"
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "6080:8080"
         
-    java:
-      build: .
+  java:
+    build: .
