@@ -16,4 +16,4 @@ services:
       - 6080:8080
       
    java_app:
-     build: Dockerfile
+     build: .
