@@ -1,4 +1,4 @@
-version: "3.7" 
+﻿version: "3.7" 
 
 services:
 
@@ -17,4 +17,4 @@ services:
       - "6080:8080"
         
   java:
-    build: .
+    build: ./src
