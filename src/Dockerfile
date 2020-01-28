@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt-get update && apt-get install -y maven \
+RUN apt-get update && apt-get install -y maven
 RUN cd sweater
 RUN mvn compile
 RUN cd target
