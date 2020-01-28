@@ -1,4 +1,3 @@
 FROM ubuntu
 RUN apt-get update && apt-get install -y maven
-WORKDIR /sweater
-RUN mvn compile
+RUN mvn -f /root/sweater/pom.xml compile
