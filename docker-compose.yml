@@ -3,7 +3,7 @@
 services:
 
   db:
-    image: postgres
+    build: ./db
     restart: always
     ports:
       - "5432:5432"
@@ -11,7 +11,7 @@ services:
       POSTGRES_PASSWORD: 123456
         
   adminer:
-    image: adminer
+    build: ./adminer
     restart: always
     ports:
       - "6080:8080"
